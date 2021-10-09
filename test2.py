@@ -46,3 +46,11 @@ alarm = st.time_input('アラームセット', time(8, 45))
 uploaded_file = st.file_uploader("ファイル選択")
 
 add_selectbox = st.sidebar.selectbox("連絡方法は?", ("Email", "Home phone", "Mobile phone"))
+
+with st.form(key='basic_form'):
+    n_job = st.number_input("最大ジョブ数", min_value =1, max_value =10000, value= 100)
+    n_shipment = st.number_input("最大輸送数", min_value =1, max_value =10000, value= 100)
+    submit = st.form_submit_button(label='データ更新')
+
+if submit:
+    st.write(n_job, n_shipment)
