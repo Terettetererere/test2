@@ -1,5 +1,5 @@
 #pip install streamlit
-poetry add streamlit
+#poetry add streamlit
 conda install -c conda-forge streamlit
 
 import streamlit as st
