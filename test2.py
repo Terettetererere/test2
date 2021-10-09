@@ -17,12 +17,9 @@ if agree:
 fruit = st.radio(label="好きなフルーツは？",options =["バナナ","りんご","いちご"],index=1)
 st.write(fruit)
 
-option = st.selectbox('今日はなにする?', ('なわとび', '野球', 'ゲーム') )
-
 def f(i):
     play = ('なわとび', '野球', 'ゲーム')
     return play[i]
-
 option = st.selectbox('今日はなにする?', (0,1,2), format_func= f )
 st.write('よし ', option, " をしよう！")
 
